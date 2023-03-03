@@ -1,0 +1,32 @@
+.menu-burger{
+    position: absolute;
+    top:-1rem;
+    left:-1rem;
+    background-color: #fff;
+    height: 100vh;
+    z-index: 1;
+    width: 70%;
+    padding: 1rem;
+    text-align: left;
+    z-index: 10;
+}
+.menu-burger svg{
+    cursor:pointer;
+    margin-bottom: 2rem;
+
+}
+.menu-burger li{
+    list-style: none;
+   
+    
+}
+.menu-burger li a{
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.menu-burger li:nth-of-type(even){
+    margin: 1rem 0;
+    
+}

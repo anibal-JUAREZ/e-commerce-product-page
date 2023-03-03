@@ -1,0 +1,36 @@
+.basket-icon{
+    position: relative;
+    color: #69707D;
+    cursor:pointer;
+    pointer-events: all;
+}
+
+.basket-icon:hover{
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.basket-product-information{
+    display: flex;
+    
+}
+
+.basket-product-information p{
+    font-size: .6rem;
+    font-weight: 700;
+    background-color:  hsl(26, 100%, 55%);
+    padding: 1px 1px;
+    text-align: center;
+    width: 1rem;
+    height: 1rem;
+    border-radius: .25rem;
+    color: #fff;
+    margin-top: -.5rem;
+    margin-left: -.5rem;
+    z-index:1 ;
+}
+
+@media screen and (max-width:375px){
+    .basket-icon{
+       margin-right: -.7rem;
+    }
+}

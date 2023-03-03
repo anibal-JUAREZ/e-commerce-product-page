@@ -1,0 +1,114 @@
+.icon-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.icon-close{
+    display: none;
+}
+nav{
+    margin: 2rem 8rem;
+    display: flex;
+    padding-bottom: 2rem;
+    position: relative;
+    
+}
+
+nav::before{
+    content: '';
+    display: block;
+    width: 95%;
+    height: 2px;
+    background-color: hsl(220, 14%, 75%);
+    position: absolute;
+    top: 5rem;
+}
+
+nav .left-side{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .left-side ul{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+nav .left-side ul li{
+    list-style: none;
+    position: relative;
+}
+nav .left-side ul li::before{
+    content: "";
+    display: block; 
+    width: 0%;
+    height: 3px;
+    background-color: hsl(26, 100%, 55%);
+    position: absolute;
+    top:4rem
+}
+
+nav .left-side ul li:hover::before{
+    width: 100%;
+}
+
+nav .left-side ul li a{
+    text-decoration: none;
+    color:hsl(220, 14%, 75%);
+    font-size: 700;
+}
+
+nav .left-side ul li a:hover{
+    
+    color: hsla(0, 0%, 0%, 0.75);
+    
+}
+nav .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 3rem;
+}
+nav .right-side img{
+    width: 3rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    
+}
+
+nav .right-side img:hover{
+    border: 2px solid  hsl(26, 100%, 55%);
+   
+    border-radius: 50%;
+    
+}
+
+@media screen and (max-width:375px){
+    .icon-menu {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    nav{
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+
+    nav .left-side ul{
+        display: none;
+    }
+    nav .right-side {
+        
+        padding-right: 0;
+    }
+    nav::before{
+      display: none;
+    }
+    nav .right-side img{
+        width: 2rem;
+    }
+}

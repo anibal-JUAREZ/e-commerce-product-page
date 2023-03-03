@@ -1,0 +1,112 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+    background-color: hsla(0, 0%, 0%, 0.75);
+  
+  }
+
+  .carousel {
+   position: absolute;
+   left: 50%;
+   top: 50%; 
+   transform: translate(-50%, -50%);
+   z-index: 10;
+    background-color: transparent;
+    border: 1px solid transparent;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    /* overflow: hidden; */
+  }
+
+  .carousel .close-button{
+    text-align: right;
+   
+  }
+
+  .carousel .close-button svg{
+    cursor: pointer;
+    margin-right: 6.6rem;
+    margin-bottom: 1rem;
+    transform: scale(1.5);
+  }
+
+  .carousel .close-button svg{
+    color:#fff
+  }
+
+  .carousel .close-button svg:hover{
+    color:hsl(26, 100%, 55%);
+  }
+
+  
+  .carousel .main-carousel img{
+    width: 70%;
+    border-radius:1rem;
+  }
+
+  .carousel .main-carousel .move-button{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel .main-carousel .move-button svg:hover{
+    
+   stroke: hsl(26, 100%, 55%);
+    
+  }
+
+  .carousel .main-carousel .move-button:first-of-type{
+   margin-right: -1.5rem;
+   z-index: 1;
+  }
+
+  .carousel .main-carousel .move-button:last-of-type{
+    margin-left: -1.5rem;
+    z-index: 1;
+   }
+
+  .carousel .main-carousel .move-button svg{
+    cursor: pointer;
+    color: #000;
+  }
+
+ 
+
+  .carousel .main-carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel .all-photos{
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .carousel .all-photos img{
+    width: 5rem;
+    border-radius:.5rem;
+    cursor: pointer;
+  }
+  .carousel .all-photos img:first-of-type{
+    filter:opacity(30%);
+    border: solid 2px rgb(255, 125, 26);
+  }
+  .carousel .all-photos img:hover:not(.carousel .all-photos img:first-of-type){
+    filter: grayscale(0.2);
+  }
+
+
+  .carousel .all-photos img:nth-child(even){
+    margin:0 1.2rem;
+  }

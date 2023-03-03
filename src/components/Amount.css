@@ -1,0 +1,38 @@
+.right-side-main .amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(223, 64%, 98%);
+    width: 18%;
+    padding: .5rem .4rem;
+    border-radius: .25rem;
+}
+
+.right-side-main .amount svg{
+    cursor: pointer;
+    
+}
+
+.icon-amount{
+    color:hsl(26, 100%, 55%);
+    pointer-events: all;
+}
+
+.icon-amount:active{
+    color: hsl(25, 100%, 94%);
+}
+
+
+.right-side-main .amount p:only-of-type{
+    margin:0;
+    color: #000;
+    
+}
+
+@media screen and (max-width:375px){
+    .right-side-main .amount{
+        width: 88%;
+        margin-bottom: 1rem;
+        padding: .7rem .7rem;
+    }
+}

@@ -1,0 +1,84 @@
+.right-side-main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side-main p:first-of-type{
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+    color: hsl(26, 100%, 55%);
+    letter-spacing: 1px;
+    margin-bottom: .5rem;
+}
+
+.right-side-main h2{
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    width: 60%;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.right-side-main p:nth-of-type(2){
+    color: hsl(219, 9%, 45%);
+    width: 83%;
+    margin-bottom: 1rem;
+}
+
+.right-side-main .discount{
+    display:flex;
+    align-items: center;
+}
+
+
+
+.right-side-main .discount p{
+  margin:0;
+  margin-left: 1rem;
+  background-color: hsl(25, 100%, 94%);
+  padding: .1rem .3rem;
+}
+
+.right-side-main p:nth-of-type(3){
+    color: hsl(219, 9%, 45%);
+    font-size: .8rem;
+    margin-top: .5rem;
+    text-decoration: line-through;
+    font-weight: 700;
+}
+
+.right-side-main .options{
+    display: flex;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width:375px){
+    .right-side-main{
+        width: 100%;
+        margin-left: 1.5rem;
+    }
+
+    .right-side-main h2{
+      width: 98%;
+    }
+
+    .right-side-main p:nth-of-type(2){
+        width: 91%;
+        font-size: .9rem;
+        padding-right: .9rem;
+    }
+    .right-side-main p:nth-of-type(3){
+       margin-left: 17.5rem;
+       margin-top: -1.5rem;
+        
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .right-side-main .options{
+        flex-direction: column;
+    }
+}
