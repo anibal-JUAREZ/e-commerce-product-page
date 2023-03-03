@@ -4,6 +4,8 @@ Responsive
 
 Mobile: 375px
 
+this e-commerce page was created using React.js
+
 E-commerce that allows to add the item into the cart (increasing or decreasing the quantity)
 
 You can see the different pictures clicking in the arrows in the mobile screen.
